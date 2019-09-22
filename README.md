@@ -25,4 +25,19 @@ $ git config --local user.name "zheng hao"
 $ git config --list --global
 ```
 
+#### 2、建立git仓库：
+
+我们在建立git仓库时，常见的场景其实只有两种：
+
+1. 把已有的项目代码纳入git管理：
+
+   使用`git init`初始化一个lesson项目文件夹，该文件夹中会存在一个.git文件夹。
+
+```git
+$ cd project
+$ git init lesson
+```
+
+1. 新建的项目直接使用git管理：
+
 
