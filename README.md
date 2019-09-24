@@ -17,7 +17,7 @@ $ git config --global user.name "cowen zheng"
 $ git config --local user.name "zheng hao"
 ```
 
-1. 配置的显示：
+2. 配置的显示：
 
    显示config的配置，我们只需要加`--list`参数即可。
 
@@ -31,6 +31,15 @@ $ git config --list --global
 
 1. 把已有的项目代码纳入git管理：
 
+   lesson文件夹下会自动生成一个.git文件夹。
+
+```git
+$ cd lesson
+$ git init
+```
+
+2. 新建的项目直接使用git管理：
+
    使用`git init`初始化一个lesson项目文件夹，该文件夹中会存在一个.git文件夹。
 
 ```git
@@ -38,6 +47,24 @@ $ cd project
 $ git init lesson
 ```
 
-1. 新建的项目直接使用git管理：
+#### 3、暂存区和工作区：
+
+我们使用`git add`命令将修改防止暂存区，暂存区要向工作区提交的话使用`git commit -m `命令。
+
+```git
+$ git add index.html //将指定文件添加至暂存区
+$ git add -u         //将已经纳入git管理的文件添加至暂存区，不包括新增文件
+$ git add .          //将所有修改添加至暂存区，包括新增文件
+```
+
+
+
+
+
+
+
+
+
+
 
 
