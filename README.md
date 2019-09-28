@@ -57,13 +57,33 @@ $ git add -u         //将已经纳入git管理的文件添加至暂存区，不
 $ git add .          //将所有修改添加至暂存区，包括新增文件
 ```
 
+#### 4、文件的重命名：
 
+有的时候我们需要将相关的文件修改名称重新提交，git的操作是默认先删除文件，然后再新增一个文件。当然我们也可以使用便捷的方法：
 
+```git
+$ git mv index.html default.html
+```
 
+#### 5、查看版本历史：
 
+使用`git log`可以查看当前的版本历史，加配不同的参数，可以实现不同的展示。
 
+- `git log --oneline`：只展示提交的版本号和提交的message名称。
 
+- `git log --all`：显示所有分支的版本历史。（这对于多个分支下的代码管理是很重要的）
 
+- `git log -n4`：显示提交记录中的前4条记录。
+
+- `git log --graph`：图形化显示版本历史。
+
+```git
+$ git log --oneline
+$ git log --oneline -n4
+$ git log --oneline --graph
+```
+
+#### 6、git目录的内容：
 
 
 
