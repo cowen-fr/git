@@ -83,8 +83,33 @@ $ git log --oneline -n4
 $ git log --oneline --graph
 ```
 
-#### 6、git目录的内容：
+#### 6、`branch`和`HEAD`：
 
+分支可以理解为某个版本下的备份，并在该备份文件下进行的扩展。
 
+- `git checkout -b branchname`：新建分支，并自动切换到该分支。
+
+- `git checkout branchname`：切换分支。
+
+- `git branch`：查看当前所有分支。
+
+- `git branch -D branchname`：删除分支（注意删除分支时，HEAD不能指向当前要删除的分支）。
+
+```git
+$ git checkout -b demo 
+$ git checkout demo
+$ git branch
+$ git branch -D demo
+```
+
+#### 7、修改`commit`中的提交`message`：
+
+我们在提交代码时，会用到`git commit -m message`，但是有的时候我们感觉上次提交的message信息不完整或者不准确，可以借助`git commit --amend`进行修改。
+
+```git
+$ git commit --amend
+```
+
+> 使用`git commit --amend`命令会弹出vim编辑界面，在该界面中进行修改。
 
 
