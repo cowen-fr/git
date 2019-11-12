@@ -26,7 +26,6 @@ $ git config --list --global
 ```
 
 #### 2、建立git仓库：
-<<<<<<< HEAD
 
 我们在建立git仓库时，常见的场景其实只有两种：
 
@@ -112,9 +111,6 @@ $ git commit --amend
 ```
 
 > 使用`git commit --amend`命令会弹出vim编辑界面，在该界面中进行修改。
-
-=======
->>>>>>> temp
 
 我们在建立git仓库时，常见的场景其实只有两种：
 
