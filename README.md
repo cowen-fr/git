@@ -199,7 +199,7 @@ id_rsa id_rsa.pub know_hosts
 ```git
 $ cd ~/.ssh/
 $ ls
-id_rsa id_rsa.pub 
+id_rsa id_rsa.pub
 ```
 
 - 公钥的添加：
@@ -213,5 +213,3 @@ $ ssh-keygen -t rsa -C "example@163.com"
 ```
 
 > Note：点击生成成功之后，要注意修改不同的名字，否则的话会把默认的公钥覆盖掉，造成验证失败。
-
-
